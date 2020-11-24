@@ -2,7 +2,7 @@
 layout: post
 title:  "6.824 Lab1 MapReduce"
 date: 2020-11-24 16:29:10 +0800
-categories: [Distributed System, "MIT 6824"]
+categories: [Distributed System, MIT 6824]
 tags: [Distributed System,6.824,MapReduce]
 ---
 # Preparation
