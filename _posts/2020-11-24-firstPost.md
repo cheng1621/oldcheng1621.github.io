@@ -57,7 +57,7 @@ type Task struct {
 * `State`       3 states: "UnAssigned", "Assigned", "Finished".
 * `Time`        Master should resend the task to Worker if worker fails for some reasons.
 * `Inter`       files need to be Reduced.  
-# Result.
+# Result
 ![Result](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/lab1_result.png)
 
 
