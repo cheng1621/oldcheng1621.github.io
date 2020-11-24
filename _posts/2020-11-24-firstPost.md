@@ -2,7 +2,7 @@
 layout: post
 title:  "6.824 Lab1 MapReduce"
 date: 2020-11-24 16:29:10 +0800
-categories: [Distributed System,MIT-6.824]
+categories: [MIT_6.824]
 ---
 # Preparation
 * [MapReduce Paper](http://static.googleusercontent.com/media/research.google.com/zh-CN//archive/mapreduce-osdi04.pdf)
