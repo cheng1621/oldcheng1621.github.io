@@ -57,6 +57,36 @@ type Task struct {
 * `State`       3 states: "UnAssigned", "Assigned", "Finished".
 * `Time`        Master should resend the task to Worker if worker fails for some reasons.
 * `Inter`       files need to be Reduced.  
+
+`worker.go`
+```
+func Worker(mapf func(string, string) []KeyValue,
+	reducef func(string, []string) string) {
+		
+	// endless loop.
+	
+	for true {
+		args := Task{}
+		reply := Task{}
+		Initialization(&args,&reply)
+		call("Master.Handler",&args,&reply)
+		CopyTask(&args,&reply)
+		switch reply.Type {
+		case "Finished": 
+			return
+		case "Wait":
+			time.Sleep(time.Second)
+			continue
+		case "map":
+			Execute_map(&args,mapf)
+			call("Master.UpdateMaster",&args,&reply)
+		case "reduce":
+			Execute_reduce(&args,reducef)
+			call("Master.UpdateMaster",&args,&reply)
+		}
+	}
+}
+```
 # Result
 ![Result](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/lab1_result.png)
 
