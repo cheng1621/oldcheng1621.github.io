@@ -3,7 +3,7 @@ layout: post
 title:  "ZooKeeper Note"
 date: 2021-01-02 23:17:10 +0800
 categories: [Distributed System]
-tags: [Distributed System,Raft]
+tags: [Distributed System,Zookeeper]
 ---
 # Abstract
 Zookeeper: high performance instead of wait-free property. FIFO requests and linearizability for all requests.
