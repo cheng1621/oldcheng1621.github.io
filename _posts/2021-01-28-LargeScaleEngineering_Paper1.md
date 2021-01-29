@@ -86,57 +86,7 @@ Although `Agile` and `Waterfall` are two different methodologies which apply to 
 `Agile` methodology is mainly used in a situation: the work has some kind of uncertainty, like the team needs some feedback from customers or leaders. 
 
 # Reference. 
-[1] https://project-management.com/agile-vs-waterfall/  
-[2] guru99.com/waterfall-vs-agile.html  
-[3] https://techbeacon.com/app-dev-testing/managing-agile-waterfall-together  
-[4] https://stackify.com/agile-methodology/
-# key sentence. (focus on developing)
-Software projects follow a methodology of clearly defined processes or software development life cycle (SDLC) to ensure the end product is of high quality.  
-
-Waterfall. is globally used on manufacturing and construction industry projects. Before move to next phase from current phase, the tasks have to be reviewed and verified. Linear and sequential approach, flows in one direction.  
-
-Agile: Intuitively, it's a feedback loop. incremental model of software development based on principles that focus on some flesible response to change. Instead of planning the whole process before task starts, it replies on the feedback. it breaks down development work in small increments completed in iteration.  
-
-Both: both can help a development team produce a high-quality software. 
-
-Agile: phase called `sprint` with a defined duration.  at each end of one sprint, the task such as customer involvement and evaluation should be reviewed.
-Advantage: 
-1. fast software development life cycle.  
-2. predictable schedule in sprints.  
-3. customer focused.  
-4. flexible in accepting changes.  
-5. need efficient communication.  
-6. ideal for projects with non-fixed funding.  
-
-Disadvantage: 
-1. high degree of customer involvement.  
-2. assumes every team member is completely dedicated to the project, without which weakens the principle of self-management.  
-3. co-locations.
-
-Waterfall: divide the project into several distinct phases: requirements gathering, analysis and design, coding and unit testing, system and user acceptance testing and deployment. 
-> Waterfall methodology is a sequential approach that divides the SDLC to distinct phases such as requirements gathering, analysis and design, coding and unit testing, system and user acceptance testing, and deployment. The next phase can only proceed if the previous phase has been completed. In between phases, a deliverable is expected or a document is signed off. All phases are passed through and completed only once, so all requirements are gathered as much as possible at the start to provide the information in creating the plans, schedules, budget, and resources. It is plan-driven, so any changes after the project has started would offset the original plan and require a restart.  
-
-advantages:  
-1. straightforward planning. 
-2. better design with whole-system approach. 
-3. Defined scope of work.  
-4. Easier costing.  
-5. clear measurements of progress.  
-6. Dedicated resources can work in parallel for their special tasks.  
-
-Disadvantage: 
-1. Rigid structure.  
-2. No allowance for uncertaincy. 
-3. limited customer engagement. 
-4. it is not ideal for a large-sized project where the end result is too far in the future.  
-5. testing is done only at the latter phases of the project.  
-
-# example. 
-I never worked in a company, so I don't know how does Agile or Waterfall look like in company,but I think Agile or Waterfall support for company is really complex and beyond my imagination. For the following parapragh I just want to take some courseworks as examples.  
-In a way, I don't even notice some works I have done is actually using Waterfall methodology. When I take this course, I realise that many courses I have taken is using Waterfall methodology. Some courses may take Agile as the main methology. For this course, Large Scale Software Engineering, I think it combine thest two methods.
-For `Waterfall` part: 
-these courses are divided into 12 phases. from `Project Planning` to `Estimation` and eventually goes to `Agile Methods`, assume that we are at the phase of `Project Planning` and are ready to go to the phase `Estimation`, the current phase needs to be reviewed before going into the phase `Estimation`. For me, this arrangement is perfect, because I know what I can learn during this spring semester and I can make a good scedule to take this course. For example, I need to review what I learn from the week 2's lecture before I take the reading assignment, because I think If I cannot understand the lecture notes well, I wouldn't understand the reading well. Therefore, `Waterfall` methodology is really good for this course, it defines the target in each phase and make students focus on one thing in a week. 
-For `Agile` part:
-Professor opens a `Discussion tabs` in this courses, I think it takes students involvement into consideration. Although the whole projects can be divided into 12 phases, there are some unpredicted uncertainty in each phase, like the amount of reading in a week, I think we can't plan on everything before this course is open. `student involvements` is really good for making a perfect course.  
-
-
+[1] [https://project-management.com/agile-vs-waterfall/](https://project-management.com/agile-vs-waterfall/)  
+[2] [https://www.guru99.com/waterfall-vs-agile.html](https://www.guru99.com/waterfall-vs-agile.html)  
+[3] [https://techbeacon.com/app-dev-testing/managing-agile-waterfall-together](https://techbeacon.com/app-dev-testing/managing-agile-waterfall-together)  
+[4] [https://stackify.com/agile-methodology/](https://stackify.com/agile-methodology/)  
