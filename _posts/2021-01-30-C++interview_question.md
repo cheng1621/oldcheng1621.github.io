@@ -2,7 +2,7 @@
 layout: post
 title:  "C++ interview question"
 date: 2021-01-30 16:08:10 +0800
-categories: [C++]
+categories: [C]
 tags: [interview questions]
 ---
 
