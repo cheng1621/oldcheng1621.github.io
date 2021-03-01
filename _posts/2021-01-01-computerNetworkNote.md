@@ -55,6 +55,13 @@ two transport layer protocol, `TCP` and `UDP`.
 Difference between network layer and transport layer.  
 > logical communication between app processes.  (transport layer)  
 communication between hosts. (network layer.)  
+provide logical communication between app processes.  
+break app messages into segments and passes it to network layer.  
+two things cannot be guaranteed: delay and bandwidth.  
+
+### Multiplexing/Demultiplexing.
+multiplexing: handle data from multiple sockets.  
+demultiplexing: send the segment to correct socket from the header info.  
   
 TCP: congestion control, flow control, and connection setup.  
 
@@ -65,6 +72,9 @@ demultiplexing: use header info to deliver received messages to correct socket.
 ### UDP.
 no handshaking between UDP sender. 8 bytes.  
 error-detected: `checksum`..  
+Q: Why does UDP provide a checksum as many link layer protocols (e.g., the popular Ethernet protocol) also provide error checking?  
+A: No guarantee that all the links between source and destination provide error checking.  
+   
 ### Pipelined protocol.
 1. Go back N: receiver only sends culmulative ack. sender has timer for oldest unacked packet.  
 2. selective repeat: receiver sends individual ack for each packet.  

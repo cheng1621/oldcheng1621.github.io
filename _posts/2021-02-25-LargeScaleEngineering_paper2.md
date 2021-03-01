@@ -7,12 +7,12 @@ tags: [Large Scale Software Engineering, paper2]
 ---
 
 # Summary. 
-`TiDB` is an open-source NewSQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads. It is MySQL compatible and features horizontal scalability, strong consistency, and high availability. This project has more than 26.9k stars. ![repository link](https://github.com/pingcap/tidb)  
+`TiDB` is an open-source NewSQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads. It is MySQL compatible and features horizontal scalability, strong consistency, and high availability. This project has more than 26.9k stars. [repository link](https://github.com/pingcap/tidb)  
 # README.md file
 there are some tabs in this file for starter to use or for the contributor to make a contribution to this projects.  
 `What is TiDB`: introduce the what does TiDB do and some core features of TiDB.  
 `Quick Start`: Made for users and tells the users how to set up environments.  
-`To Start developing TiDB`: Made for contributor.  it shows how does the contributors make a contribution to TiDB.[1]
+`To Start developing TiDB`: Made for contributor.  it shows how does the contributors make a contribution to TiDB.[1]  
 `case studies`: Made for learners, someone has to understand TiDB before he becomes a contributor.  
 `blog`: posts something interesting on the blog for everyone who is interested in this project.  
 `documentation`: provide all the documents on this tabs.  
@@ -25,10 +25,10 @@ It can make people in different roles collaborate well with each other in this l
 
 # how does contributors communicate with each other?
 1. Slack channel.  
-![Slack Community](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/TiDB_slack_community.png)
+![Slack Community](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/TiDB_slack_community.png)  
 TiDB has created a Slack community for any members to communicate with each other. this community has grown up to 2500 members and every members can share anything on Slack.  This community is more like a chatting box, when someone meets some personal technical problems, like the environment is set up unsuccessfully, he could go to this community for help and the problems are always being solved in minutes.  
-2. `Issues` tab.
-![Issues](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/TiDB_issues.png)
+2. `Issues` tab.  
+![Issues](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/TiDB_issues.png)  
 every project has a tab named with issues. everyone could go to this tab posting a issue on it and wait for other contributors to deal with it. At the same time, every contributor can help others fix the problems. The issues are always formal and usually no one meets the same problems before. The issues are always bugs waiting for someone to solve them out.  
 3. `Community`. This repository has been created for contributor to make a contribution to the project. the details are delivered later.   
 4. there are some other ways, such as `reddit`, `twitter` and `email`. some news or some activities are posted on this media website and make everyone knows what TiDB teams have been doing recently. 
@@ -44,7 +44,7 @@ For starters, they could everything about TiDB they want which can help them lea
 # Community.[2]
 Community is really important for this project. It is really efficient for contributors to collaborate with each other.  
 ### Architecture. 
-![Architecture](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/TiDB_community_architecture)  
+![Architecture](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/TiDB_community_architecture.png)  
 the architecture shows the structure of the whole community. Every members are responsible for different parts. 
 ##### PMC.
 PMC is short for Project Management Committee. PMC is the core management team and oversee TiDB community. it is responsible for making the whole process work smoothly and doing the decisions-making about what the future of TiDB goes to.  
@@ -81,11 +81,11 @@ the conflict happens when the agreement is not achieved by everyone. `Voting` co
 the projects can be added via issue discussion. Once sufficient discussions have taken place, the `maintainer` should decide whether the new project should be added or not.  
 
 ### Roadmap.
-![Roadmap](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/TiDB_community_roadmap)  
+![Roadmap](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/TiDB_community_roadmap.png)  
 Roadmap is like a route where the TiDB goes on. Roadmap is really an important part in TiDB. It is made by PMC and tells tons of contributors what to do in the future. When one task is done, a tick should be listed before the task. In that case, every members could see the progress TiDB makes.
 
 ### Comunity Activities.
-![Activities](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/TiDB_community_activities)  
+![Activities](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/TiDB_community_activities.png)  
 it lists all the activities since the communities have been set up. it tells all the members the activities are being held in the future. In this way, it can make members being more passionate about contributions to the projects.  
 
 ### RFC.
