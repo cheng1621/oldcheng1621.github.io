@@ -1,10 +1,4 @@
----
-layout: post
-title:  "Computer NetWork Note"
-date: 2020-01-02 23:17:10 +0800
-categories: [Computer Network]
-tags: [Computer Network]
----
+
 # Chapter 1. 
 packet-switching: hosts break application-layer messages into packets.  
 circuit switching: `FDM` and `TDM`.  
@@ -76,12 +70,122 @@ Q: Why does UDP provide a checksum as many link layer protocols (e.g., the popul
 A: No guarantee that all the links between source and destination provide error checking.  
    
 ### Pipelined protocol.
+two protocol. (one is to send the whole N packet and the other is to send the exact one.)
 1. Go back N: receiver only sends culmulative ack. sender has timer for oldest unacked packet.  
 2. selective repeat: receiver sends individual ack for each packet.  
 
 ### TCP.
 
 
+# Network layer.
+two plane: data plane and control plane.  
 
+### scheduling mechanism
+First in first out.
+### network layer.
+routing protocol, IP protocol, ICMP protocol.  
+key abstract: data format, fragmentation, IPv4 addressing, network addressing translation, Ipv6.  
+
+##### Ip protocol. 
+20 bytes for ip 4.  40 bytes for ip6.  
+
+Q: DHCP process: broadcast-> get a respond -> request IP address -> server sends back ack msg.  
+
+
+# control panel.
+per-router control plane and logically centralized control plane.  
+### routing protocols.  
+determine 'good' paths from sending host to receiving host.  
+
+### Dijkstra's algorithm. 
+link costs known to all nodes.  
+AS: autonomous systems.  
+
+inter-AS: BGP. 
+intra-AS: OSPF.
+eBGP: neighboring 
+iBGP: all AS-internal routers.  
+
+BGP. (TCP)
+AS-Path, next-hop.
+
+Q: Why a logically centralized control plane?
+easier network management
+table based forwarding.  
+distributed is more difficult.  
+
+SDN.  
+data plane switch -> controller -> control application.  
+fast, simple, commodity, 
+
+OpenFLow protocol. 
+operates between controller, switch. 
+based on TCP. 
+
+ICMP. internet control message protocol.  
+
+SNMP protocol. 
+
+
+# Link Layer.
+features: error detection, correction. sharing a broadcast channel. Ethernet. 
+summary: communication channel that connect adjacent nodes. 
+multiple links, Ethernet on the first link, and 802.11 on the last link.  
+
+### service.
+encapsulate datagrams into frame, adding header, 
+MAC address.  
+reliable delivery.  
+flow control.. 
+error detection and error correction.  
+
+### Error detection. 
+combine `EDC` to datagram.  
+sender puts checksum value into UDP field.  
+
+cyclic redundancy check.  
+
+### multiple access protocol. 
+two types: point-to-point, broadcast.  
+single shared broadcast channel.  
+collision if node receives two or more signals at the same time.  
+
+### MAC protocol.  
+1. channel partitioning.  
+    TDMA(time division multiple access.) and FDMA.  
+2. random access. 
+    slotted ALOHA. efficienty: 0.37.    
+    nodes start to transmit only slot beginning.  
+    pros: simple.  Cons: collisions, idle slots. need closk synchronization.  
+    CSMA(carrier sense multiple access): listen before transmit.  
+    still with collision.  
+    CSMA/CD. better for wired LANs.  better than ALOHA.  
+3. taking turns. 
+    polling: a master.  
+    token passing. token passed from one node to next node. 
+    cable access network.  
+
+
+### LANs.
+MAC addresses and ARP.  
+48 bits. 
+ARP: address resolution protocol.  
+IP node(host router) <IP, MAC, TTL>
+
+##### Ethernet. 
+preamble: 7 bytes.
+source address: 6 bytes .
+connectionless, no handshaking between sender NICs and receiver NICs. 
+unreliable: no Acks. 
+
+table: <MAC, interface, TTL>
+
+VLANs: virtual local area network.  
+port-based VLAN.  
+traffic isolation, dynamic membership, forwarding between VLANs.  
+
+link virtualization
+MPLS. multiprotocol label switching.  
+MPLS can be based on source and destination address.  
 
 
