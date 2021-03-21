@@ -13,7 +13,7 @@ A Scrum environment should be fostered like these:
 3. The Scrum Team and its stakeholders inspect the results and adjust for the next Sprint.  
 4. Repeat  
 these things are ideal and are designed as a concept, it's a different story when it goes back into the reality. That's when Dark Scrum happens. it happens when all of the concepts of Agile and all the different aspects of teamwork are ridiculed with unreasonable expectations put forth by any number of people associated with the project.[1]  
-
+![Dark_scrum](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/dark_scrum.png)  
 # Some symptoms of darkness. 
 #### people know their old jobs, not their new Scrum job.
 > Scrum generally starts with very few people trained, even fewer understanding it, and a lot of people who think they know what they’re supposed to do. It should be no surprise if they do it wrong, and very often they do.[2].  
