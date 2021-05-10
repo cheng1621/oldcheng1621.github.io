@@ -2,7 +2,7 @@
 layout: post
 title:  "LL(1)"
 date: 2021-04-21 19:10:10 +0800
-categories: [LL(1) Parser]
+categories: [Compiler]
 tags: [LLVM compiler]
 ---
 # Introduction.
