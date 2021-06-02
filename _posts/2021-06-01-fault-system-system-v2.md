@@ -1,8 +1,7 @@
-
 ---
 layout: post
 title:  "6.824"
-date: 2021-05-30 09:19:10 +0800
+date: 2021-05-29 09:19:10 +0800
 categories: [Distributed System]
 tags: [Distributed System,Raft]
 ---
@@ -14,7 +13,7 @@ tags: [Distributed System,Raft]
 # 基本架构。
 `负载均衡`:  
 对数据库进行碎片化，通过对key 哈希取模确定虚拟碎片节点，再由虚拟服务器确定物理服务器。  
-![Picture1](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/fault_tolerant_system_1.png)  
+![Picture1](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/fault_tolerent_system_1.png)  
 
 `动态扩缩容`:  
 用单独的一个raft集群 (Shard controller) 管理动态扩缩容。
