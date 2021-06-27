@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Design Pattern Note"
+title:  "Computer Network Note"
 date: 2021-06-05 19:10:10 +0800
 categories: [Design Pattern]
 tags: [Design Pattern]
@@ -136,6 +136,62 @@ translate the local address to public address.
 sending host: take entire IPv6 datagram and put it in IPv4 datagram. Then the Ipv4 datagram addressed to Ipv6 node on the receiving side of `tunnel`. 
 
 ## Generalized Forwarding and SDN.  
+
+# Control plane.
+`per-router control`: OSPF & BGP protocols.  
+`logically centralized control`: controller computes and distributed forwarding tables to be used by each and every router. 
+
+## routing algorithm.  
+`centralized routing algorithm`: be aware of the cost of each link in the network. (LS algorithm)
+`decentralized routing algorithm`: no node has complete information about costs of all nodes. (DS algorithm);  
+### LS algorithm.  
+`Dijkstra’s algorithm`: computes the least-cost path from one node to all the other node in the network. (iterative);  
+
+### DV algorithm.  
+a node x updates its distance-vector estimate when it either sees a cost change in one of its directly attached links or receives a distance-vector update from some neighbor.  
+
+## OSPF.(Intra-AS Routing in the Internet).
+two reasons: `Scale` and `administrative autonomy`.
+`LS algorithm`.  
+
+- Advances:
+    - Security. only trusted routers can participate in OSPF protocol within AS.  
+    - Multiple same-cost paths. 
+    - ...
+
+## BGP.
+all ASs run the same inter-AS routing protocol.  
+two connections: `eBGP`(a BGP connection spans two ASs), and `iBGP`: routers in the same ASs.  
+
+### BGP attributes. 
+`AS-path`: contain the list of ASs through which the advertisement has passed.  
+`NEXT-HOP`: IP address of the router interface that begins the AS-PATH.  
+`destition prefix`: 192.168.1.0/22. 1024 IPs.  
+
+### hot potato algorithm 
+send packet to others as soon as possible, not care which way it should go.  
+
+### Route-selection algorithm. 
+note: if more than one routes arrive to one prefix, BGP sequentially invokes the following elimination rules until one route remains.  
+
+### IP-anycast.
+based on `route-selection algorithm` to pick the best path.  
+
+## SDN control plane.(???)
+OpenFlow protocol is implemented in controller layer.  
+
+## ICMP(internet control message protocol)
+it is used by hosts and routers to communicate network-layer information with each other.
+it is carried in IP datagram. 
+
+note: `ping` sends `ICMP type 8 code 0` message to host. `traceroute` also uses ICMP.  
+
+## network management. SNMP.
+application-layer protocol.  
+### framework
+- managing server.
+- managed device.
+- MIB.
 
 
 

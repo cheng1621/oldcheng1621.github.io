@@ -208,7 +208,37 @@ public:
     }
 }
 ```
-
+# Decorator 
+```
+// decorator
+class Component{
+public:
+    virtual ~Component(){}
+    virtual std::string Operation() const = 0;
+};
+class ConcreteComponent : public Component {
+public:
+    std::string Operation() const override{
+        return "concreteComponent";
+    }
+};
+class Decorator : public Component{
+protected:
+    Component* component_;
+public:
+    Decorator(Component* c):component_(c){};
+    std::string Operation()const override{
+        return component_->Operation();
+    }
+};
+class DecoratorA : public Decorator{
+public:
+    DecoratorA(Component* c) : Decorator(c){};
+    std::string Operation() override{
+        return "Decorator " + Decorator::operation() << endl;
+    }
+};
+```
 
 # Command (Transaction)
 ### What is it.
