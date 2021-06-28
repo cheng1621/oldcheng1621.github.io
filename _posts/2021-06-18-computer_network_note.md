@@ -195,7 +195,47 @@ application-layer protocol.
 
 
 
+# Link layer
+## service.
+`framing`: it encapsulates network-layer datagram.  
+`link access`: MAC protocol specifies the rules by which a frame is transmitted onto the link.  
+`reliable delivery`  
+`error detection and correction`.  
 
+## Error detection and correction.
+### parity check
+`0111000110101011 1`  
+### checksuming methods
+d bits of datagram is treated as k bit datagram ans sum this up to make a new checksum.  
+### CRC
+append some bits to the end of bit stream, making it be divisible by G.
+
+## Multiple Access links and protocol.  
+### channel partitioning protocol. 
+avoid collision. 
+TDM : limit rate of R/N, even there is one node in the network. a node has to wait for its turn for transmission. 
+FDM:  R/N, just as TDM.  
+### Random Access protocol.  
+rate: R, wait a random delay before transmitting the frame. 
+`ALOHA` and `slot ALOHA`.  
+
+### take-turns protocols.  
+- polling protocol. assign a node as master node (polling delay); 
+- token
+
+## switching local area networks.  
+`ARP`: translate IP to MAC address.  
+`broadcast address`: FF-FF-FF-FF-FF-FF.  
+### Ethernet.  
+structure:
+CRC, data field, source destination address. `no handshake`
+
+### switches.  
+link-layer.
+features and properties:
+elimination of collisions & management.  
+
+## link virtualization. 
 
 
 

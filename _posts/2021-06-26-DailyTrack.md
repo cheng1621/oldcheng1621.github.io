@@ -8,9 +8,14 @@ mermaid: true
 math: true
 ---
 
+# 2021-06-29
+- [ ] &nbsp; ***Operating System.***
+- [ ] gfs.
+- [ ] two leetcode problem.
+- [ ] design pattern: Facade.
 
-# 2021-06-28(Monday)
-- [ ] &nbsp; ***Computer Network Chapter 6.***
+# 2021-06-28
+- [x] &nbsp; ***Computer Network Chapter 6.***
 - [ ] &nbsp; One leetcode problem.  
 - [ ] &nbsp; design pattern: Facade.
 
