@@ -9,10 +9,9 @@ math: true
 ---
 
 # 2021-06-29
-- [ ] &nbsp; ***Operating System.***
-- [ ] gfs.
-- [ ] two leetcode problem.
-- [ ] design pattern: Facade.
+- [x] &nbsp; ***Operating System. chapter 1***
+- [x] &nbsp; gfs.
+- [x] &nbsp; two leetcode problem.
 
 # 2021-06-28
 - [x] &nbsp; ***Computer Network Chapter 6.***
