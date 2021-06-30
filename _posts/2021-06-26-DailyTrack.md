@@ -8,6 +8,14 @@ mermaid: true
 math: true
 ---
 
+# 2021-07-01
+- [ ] &nbsp; ***Operating System. chapter 3***
+- [ ] &nbsp; leetcode --- Tree.
+
+# 2021-06-30
+- [x] &nbsp; ***Operating System. chapter 2***
+- [x] &nbsp; leetcode list.
+
 # 2021-06-29
 - [x] &nbsp; ***Operating System. chapter 1***
 - [x] &nbsp; gfs.
