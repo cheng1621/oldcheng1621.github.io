@@ -34,4 +34,4 @@ tags: [application.]
 13. capital group 
 **applied(9.18)** -->  
 14. snowflake(intern)
-**applied(9.18)** -->  
+**applied(9.18)** -->   
