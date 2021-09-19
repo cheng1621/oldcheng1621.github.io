@@ -3,7 +3,7 @@ layout: post
 title:  "Application for jobs"
 date: 2021-09-18 8:10:10 +0800
 categories: [Application]
-tags: [application.]
+tags: [application]
 ---
 
 # record of applications.
