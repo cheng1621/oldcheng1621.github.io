@@ -9,7 +9,7 @@ math: true
 ---
 # 2021-09-21
 - [ ] &nbsp;5 applications for tech company.
-- [ ] do some research.~~
+~~- [ ] do some research.~~
 
 # 2021-09-19
 - [x] &nbsp;10 applications for tech company.
