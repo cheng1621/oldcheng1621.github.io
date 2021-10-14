@@ -8,13 +8,13 @@ mermaid: true
 math: true
 ---
 # 2021-09-21
-- [ ] &nbsp;5 applications for tech company.
-~~- [ ] do some research.~~
+- [ ] &nbsp;5 applications for tech company.  
+- [ ] ~~do some research.~~
 
 # 2021-09-19
 - [x] &nbsp;10 applications for tech company.
-- [x] do some research.
-- [x] dedao's weekly report.
+- [x] &nbsp;do some research.
+- [x] &nbsp;dedao's weekly report.
 
 # 2021-08-27
 重新被字节的教育业务捞起来，面了一轮，还是挂了（真的是一万个为什么）。先做一个总结吧。
