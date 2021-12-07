@@ -12,7 +12,7 @@ in different datacenters and using Paxos to reach consensus among datacenters as
 
 
 # Motivaiton
-![2PCOverPaxos](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/2PCOverPaxos.png)   
+![2PCOverPaxos](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/2PCOverPaxos.png){: width="700" height="700" }
 1. **cross-datacenter one-way trip**. inform the cohorts where the coordinator is.   
 2. **cross-datacenter roundtrip**. Paxos leader needs to receive accepts from majority of replicas.    
 3. **cross-datacenter one-way trip** cohorts inform the coordinator that the prepare phase is finished.   
@@ -26,7 +26,7 @@ in different datacenters and using Paxos to reach consensus among datacenters as
 3. Disadvantage: Read Operations should send requests to all replicas and waits for response from all of them.
 
 # Result.
-![PaxosOver2PC](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/PaxosOver2PC.png)   
+![PaxosOver2PC](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/PaxosOver2PC.png){: width="700" height="700" }
 1. **cross-datacenter one-way trip**. clients send message to all coordinaters.  
 2. 2PC only happens inside datacenter.  
 3. **cross-datacenter one-way trip**. coordinator should communicate with each other and respond to client after 2PC is finished.  
