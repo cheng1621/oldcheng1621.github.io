@@ -8,7 +8,7 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: HelloMike                          # the main title
+title: HelloBen                          # the main title
 
 tagline: Try everything.  # it will display as the sub-title
 
@@ -39,7 +39,8 @@ social:
     - https://github.com/cheng1621       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/bencheng-su-8163581a4/
+    
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
