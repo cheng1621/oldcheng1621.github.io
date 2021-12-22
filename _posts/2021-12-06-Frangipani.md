@@ -34,7 +34,7 @@ tags: [frangipani]
 Easy, just shut it down when removing the servers, and tell the new server where is the Petal servers and lock server if adding the new servers.  
 
 # Some other Notes:
-![frangipany_Concurrent_write](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/frangipani_Concurrent_write.png){: width="600" height="200" .normal}
+![frangipany_Concurrent_write](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/frangipani_Version.png){: width="600" height="200" .normal}
 
 **avoid conflict of write and operation happens at the same time**  
 
