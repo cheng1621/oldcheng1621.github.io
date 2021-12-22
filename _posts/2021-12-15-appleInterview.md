@@ -162,8 +162,15 @@ space : O(size of trieTree).
 
 # Solution 3. ---> need to be discussed.
 ![WordSearchGraph](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/wordSearchGraph.png){: width="300" height="300" .left}
-![WordSearchTrieTree](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/wordSearchTrieTree.png){: width="410" height="300" .right}
+&nbsp;  
+&nbsp;  
 
+![WordSearchTrieTree](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/wordSearchTrieTree.png){: width="410" height="500" .normal}
+
+  
+  
+&nbsp;  
+&nbsp;  
 
 #### note.
 1. client send one word at a time.  
