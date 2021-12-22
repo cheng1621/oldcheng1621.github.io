@@ -39,6 +39,6 @@ Easy, just shut it down when removing the servers, and tell the new server where
 **avoid conflict of write and operation happens at the same time**  
 
 
-![frangipani_Version](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/frangipani_Version.png){: width="600" height="200" .normal}
+![frangipani_Version](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/frangipani_Version.png){: width="600" height="200" .normal}
 
 **Version number**  

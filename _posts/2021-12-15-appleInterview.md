@@ -5,7 +5,7 @@ date: 2021-12-15 8:10:10 +0800
 categories: [word search]
 tags: [leetcode]
 ---
-![graph](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/wordSearchGraph.png){: width="400" height="400" .normal}
+![graph](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/wordSearchGraph.png){: width="400" height="400" .normal}
 # Note.
 1. **board** only contains lower-case letter.  
 2. every string in **words** is unique.  
@@ -161,8 +161,8 @@ time : O(m * n * 8 ^ l)
 space : O(size of trieTree).
 
 # Solution 3. ---> need to be discussed.
-![WordSearchGraph](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/wordSearchGraph.png){: width="300" height="300" .left}
-![WordSearchTrieTree](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/wordSearchTrieTree.png){: width="410" height="300" .right}
+![WordSearchGraph](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/wordSearchGraph.png){: width="300" height="300" .left}
+![WordSearchTrieTree](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/wordSearchTrieTree.png){: width="410" height="300" .right}
 
 
 #### note.

@@ -13,11 +13,11 @@ tags: [Distributed System,Raft]
 # 基本架构。
 `负载均衡`:  
 对数据库进行碎片化，通过对key 哈希取模确定虚拟碎片节点，再由虚拟服务器确定物理服务器。  
-![Picture1](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/fault_tolerent_system_1.png)  
+![Picture1](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/fault_tolerent_system_1.png)  
 
 `动态扩缩容`:  
 用单独的一个raft集群 (Shard controller) 管理动态扩缩容。
-![Picture2](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/fault_tolerant_system_2.png)  
+![Picture2](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/fault_tolerant_system_2.png)  
 Shard controller作用: 
 1. 处理client发送的请求, 根据请求找到处理请求的物理节点。  
 2. controller 帮助 物理节点找到它所负责的那一部分虚拟节点。  
@@ -121,7 +121,7 @@ type Shard struct{
 
 优化：
 1. 假设一台服务器死机的时间过长，当它重新启动的时候，它会接收snapshot 和 log 回放，假设如下情况：
-![Picture4](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/fault_tolerant_system_4.png)  
+![Picture4](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/fault_tolerant_system_4.png)  
 
 正常情况下，leader首先发送一个空的日志给follower，起点在1000，因为follower 不存在标号为1000 的日志，它就会返回一个错误值。  
 然后leader对日志标号减一，这个时候会发送一个长度为1的日志，标号为999，但是follower 不存在，返回错误值。

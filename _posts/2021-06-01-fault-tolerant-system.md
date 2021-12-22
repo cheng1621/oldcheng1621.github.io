@@ -16,11 +16,11 @@ tags: [Distributed System,Raft]
 嗯，这个项目是一个key/value数据库，支持`动态扩缩容`,`负载均衡`,`线性一致性`, `可容错` 和 `可恢复`。  
 首先先说说`负载均衡`:   
 对数据库进行碎片化，通过对key 哈希取模确定虚拟碎片节点，再由虚拟服务器确定物理服务器。  
-![Picture1](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/fault_tolerent_system_1.png)  
+![Picture1](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/fault_tolerent_system_1.png)  
 
 再说说`动态扩缩容`:  
 假如说有10个虚拟节点，原来有3个物理节点，考虑负载均衡的话，那他们分别处理的虚拟节点数是3，4，3. 但是如果第四个物理节点加进来以后，那就是2，2，3，3，也就是第二个节点要分两个给新的物理节点。删除也是同样的道理。 增加和删除的操作靠一个controller来进行管理，controller本身也是一个raft集群。
-![Picture2](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/fault_tolerant_system_2.png) 
+![Picture2](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/fault_tolerant_system_2.png) 
 
 `线性一致性`:  
 通过Raft共识算法实现线性一致性。
@@ -66,7 +66,7 @@ leader发送心跳的时候也是，发送之前和发送之后如果发生了�
 4. 对 client 重复的请求直接返回数据。  
 下面的两个是raft 状态机的优化。  
 5. 假设一台服务器死机的时间过长，当它重新启动的时候，它会接收snapshot 和 log 回放，假设如下情况：
-![Picture3](https://raw.githubusercontent.com/cheng1621/HelloMike.github.io/master/assets/img/sample/fault_tolerant_system_4.png)  
+![Picture3](https://raw.githubusercontent.com/cheng1621/cheng1621.github.io/main/_posts/sample/fault_tolerant_system_4.png)  
 第一张图的情况是当一个服务器重启后再连上的时候发生的，根据raft，leader每次都把log递减，就是：  
 ```
 1st.    log[]   index:1000  
