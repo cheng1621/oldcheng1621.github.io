@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--
   Switch the mode between dark and light.
 
@@ -20,6 +21,31 @@
     constructor() {
       if (this.mode != null) {
         if (this.mode == ModeToggle.DARK_MODE) {
+=======
+<!-- Switch the mode between dark and light. -->
+
+<script type="text/javascript">
+  class ModeToggle {
+    static get MODE_KEY() {
+      return 'mode';
+    }
+    static get MODE_ATTR() {
+      return 'data-mode';
+    }
+    static get DARK_MODE() {
+      return 'dark';
+    }
+    static get LIGHT_MODE() {
+      return 'light';
+    }
+    static get ID() {
+      return 'mode-toggle';
+    }
+
+    constructor() {
+      if (this.hasMode) {
+        if (this.isDarkMode) {
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740
           if (!this.isSysDarkPrefer) {
             this.setDark();
           }
@@ -30,6 +56,7 @@
         }
       }
 
+<<<<<<< HEAD
       var self = this;
 
       /* always follow the system prefers */
@@ -40,6 +67,17 @@
               self.setDark();
             }
 
+=======
+      let self = this;
+
+      /* always follow the system prefers */
+      this.sysDarkPrefers.addEventListener('change', () => {
+        if (self.hasMode) {
+          if (self.isDarkMode) {
+            if (!self.isSysDarkPrefer) {
+              self.setDark();
+            }
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740
           } else {
             if (self.isSysDarkPrefer) {
               self.setLight();
@@ -48,6 +86,7 @@
 
           self.clearMode();
         }
+<<<<<<< HEAD
       });
 
     } /* constructor() */
@@ -55,15 +94,62 @@
 
     setDark() {
       $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
+=======
+
+        self.notify();
+      });
+    } /* constructor() */
+
+    get sysDarkPrefers() {
+      return window.matchMedia('(prefers-color-scheme: dark)');
+    }
+
+    get isSysDarkPrefer() {
+      return this.sysDarkPrefers.matches;
+    }
+
+    get isDarkMode() {
+      return this.mode === ModeToggle.DARK_MODE;
+    }
+
+    get isLightMode() {
+      return this.mode === ModeToggle.LIGHT_MODE;
+    }
+
+    get hasMode() {
+      return this.mode != null;
+    }
+
+    get mode() {
+      return sessionStorage.getItem(ModeToggle.MODE_KEY);
+    }
+
+    /* get the current mode on screen */
+    get modeStatus() {
+      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
+        return ModeToggle.DARK_MODE;
+      } else {
+        return ModeToggle.LIGHT_MODE;
+      }
+    }
+
+    setDark() {
+      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740
       sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
     }
 
     setLight() {
+<<<<<<< HEAD
       $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
+=======
+      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740
       sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
     }
 
     clearMode() {
+<<<<<<< HEAD
       $('html').removeAttr(ModeToggle.MODE_KEY);
       sessionStorage.removeItem(ModeToggle.MODE_KEY);
     }
@@ -79,6 +165,22 @@
     get hasMode() { return this.mode != null; }
 
     get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); }
+=======
+      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
+      sessionStorage.removeItem(ModeToggle.MODE_KEY);
+    }
+
+    /* Notify another plugins that the theme mode has changed */
+    notify() {
+      window.postMessage(
+        {
+          direction: ModeToggle.ID,
+          message: this.modeStatus
+        },
+        '*'
+      );
+    }
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740
 
     flipMode() {
       if (this.hasMode) {
@@ -88,7 +190,10 @@
           } else {
             this.setLight();
           }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740
         } else {
           if (this.isDarkMode) {
             this.clearMode();
@@ -96,7 +201,10 @@
             this.setDark();
           }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740
       } else {
         if (this.isSysDarkPrefer) {
           this.setLight();
@@ -105,6 +213,7 @@
         }
       }
 
+<<<<<<< HEAD
     } /* flipMode() */
 
   } /* ModeToggle */
@@ -115,4 +224,11 @@
     toggle.flipMode();
   });
 
+=======
+      this.notify();
+    } /* flipMode() */
+  } /* ModeToggle */
+
+  const modeToggle = new ModeToggle();
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740
 </script>

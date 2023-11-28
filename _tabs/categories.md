@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Categories
 icon: fas fa-stream
 order: 1
@@ -104,3 +105,9 @@ order: 1
 
   {% endif %}
 {% endfor %}
+=======
+layout: categories
+icon: fas fa-stream
+order: 1
+---
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740

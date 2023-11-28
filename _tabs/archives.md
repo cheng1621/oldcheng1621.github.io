@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Archives
 icon: fas fa-archive
 order: 3
@@ -40,3 +41,9 @@ order: 3
   {% endif %}
 {% endfor %}
 </div>
+=======
+layout: archives
+icon: fas fa-archive
+order: 3
+---
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740

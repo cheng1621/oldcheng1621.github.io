@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% comment %}
   Get the last 5 posts from lastmod list.
   v2.2
@@ -14,6 +15,18 @@
   {% if post.lastmod %}
     {% capture elem %}
       {{- post.lastmod | date: "%Y%m%d%H%M%S" -}}::{{- forloop.index0 -}}
+=======
+<!-- Get the last 5 posts from lastmod list. -->
+
+{% assign MAX_SIZE = 5 %}
+
+{% assign all_list = '' | split: '' %}
+
+{% for post in site.posts %}
+  {% if post.last_modified_at and post.last_modified_at != post.date %}
+    {% capture elem %}
+      {{- post.last_modified_at | date: "%Y%m%d%H%M%S" -}}::{{- forloop.index0 -}}
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740
     {% endcapture %}
     {% assign all_list = all_list | push: elem %}
   {% endif %}
@@ -21,8 +34,33 @@
 
 {% assign all_list = all_list | sort | reverse %}
 
+<<<<<<< HEAD
 {% assign update_list = "" | split: "" %}
 
 {% for entry in all_list limit:MAX_SIZE %}
   {% assign update_list = update_list | push: entry %}
 {% endfor %}
+=======
+{% assign update_list = '' | split: '' %}
+
+{% for entry in all_list limit: MAX_SIZE %}
+  {% assign update_list = update_list | push: entry %}
+{% endfor %}
+
+{% if update_list.size > 0 %}
+  <section id="access-lastmod">
+    <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.lastmod -}}</h2>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      {% for item in update_list %}
+        {% assign index = item | split: '::' | last | plus: 0 %}
+        {% assign post = site.posts[index] %}
+        {% assign url = post.url | relative_url %}
+        <li class="text-truncate lh-lg">
+          <a href="{{ url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <!-- #access-lastmod -->
+{% endif %}
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740

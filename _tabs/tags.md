@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Tags
 icon: fas fa-tags
 order: 2
@@ -29,3 +30,9 @@ order: 2
 {% endfor %}
 
 </div>
+=======
+layout: tags
+icon: fas fa-tags
+order: 2
+---
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740

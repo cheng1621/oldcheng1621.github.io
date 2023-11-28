@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # hidden files
 .*
 !.github
@@ -5,15 +6,35 @@
 
 # python compiled files
 *.pyc
+=======
+# Bundler cache
+.bundle
+vendor
+Gemfile.lock
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740
 
-# jekyll debug
+# Jekyll cache
+.jekyll-cache
 _site
 
-# Jeykll Gemfile.lock
-Gemfile.lock
+# RubyGems
+*.gem
 
+# NPM dependencies
+node_modules
+package-lock.json
+
+# IDE configurations
+.idea
+.vscode
+
+<<<<<<< HEAD
 # yui-compressor
 *.jar
 
 # bundle cache
 vendor
+=======
+# Misc
+assets/js/dist
+>>>>>>> 3ed5eb1ee005122b798b001c352f1086e1901740
